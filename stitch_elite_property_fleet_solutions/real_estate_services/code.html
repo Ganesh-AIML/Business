@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Real Estate Services - EliteConsult</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#000000",
+                        "on-surface-variant": "#45464d",
+                        "on-tertiary-fixed": "#001a42",
+                        "surface": "#f7f9fb",
+                        "error-container": "#ffdad6",
+                        "inverse-primary": "#bec6e0",
+                        "on-secondary-fixed": "#002113",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "inverse-surface": "#2d3133",
+                        "on-secondary-container": "#00714d",
+                        "on-error-container": "#93000a",
+                        "primary-fixed-dim": "#bec6e0",
+                        "secondary-fixed": "#6ffbbe",
+                        "on-secondary-fixed-variant": "#005236",
+                        "tertiary-fixed-dim": "#adc6ff",
+                        "on-primary-fixed": "#131b2e",
+                        "on-background": "#191c1e",
+                        "surface-bright": "#f7f9fb",
+                        "on-primary-container": "#7c839b",
+                        "tertiary-container": "#001a42",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-container": "#3980f4",
+                        "tertiary": "#000000",
+                        "outline-variant": "#c6c6cd",
+                        "surface-container-highest": "#e0e3e5",
+                        "surface-tint": "#565e74",
+                        "primary-fixed": "#dae2fd",
+                        "primary-container": "#131b2e",
+                        "surface-container-high": "#e6e8ea",
+                        "error": "#ba1a1a",
+                        "background": "#f7f9fb",
+                        "tertiary-fixed": "#d8e2ff",
+                        "outline": "#76777d",
+                        "inverse-on-surface": "#eff1f3",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "secondary": "#006c49",
+                        "on-surface": "#191c1e",
+                        "surface-container-low": "#f2f4f6",
+                        "on-tertiary-fixed-variant": "#004395",
+                        "on-primary": "#ffffff",
+                        "surface-dim": "#d8dadc",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#4edea3",
+                        "surface-container": "#eceef0",
+                        "secondary-container": "#6cf8bb",
+                        "surface-variant": "#e0e3e5"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    spacing: {
+                        "section-gap": "80px",
+                        "base": "8px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "margin-desktop": "40px"
+                    },
+                    fontFamily: {
+                        "display-lg": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "body-sm": ["Inter"],
+                        "headline-sm": ["Montserrat"],
+                        "display-lg-mobile": ["Montserrat"],
+                        "label-bold": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    fontSize: {
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["30px", { "lineHeight": "38px", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-bold": ["14px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar (from JSON) -->
+<header class="bg-surface-container-lowest dark:bg-inverse-surface border-b border-outline-variant dark:border-outline shadow-sm dark:shadow-none docked full-width top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-20">
+<div class="font-display-lg text-display-lg font-bold text-primary dark:text-primary-fixed-dim">EliteConsult</div>
+<nav class="hidden md:flex gap-gutter items-center">
+<a class="text-secondary dark:text-secondary-fixed-dim border-b-2 border-secondary font-semibold font-label-bold text-label-bold scale-95 active:scale-90 transition-transform" href="#">Real Estate</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim font-label-bold text-label-bold hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 scale-95 active:scale-90 transition-transform" href="#">Car Leasing</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim font-label-bold text-label-bold hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 scale-95 active:scale-90 transition-transform" href="#">About</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim font-label-bold text-label-bold hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 scale-95 active:scale-90 transition-transform" href="#">Social</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim font-label-bold text-label-bold hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 scale-95 active:scale-90 transition-transform" href="#">Contact</a>
+</nav>
+<button class="bg-secondary text-on-secondary font-label-bold text-label-bold px-6 py-3 rounded-DEFAULT hover:bg-on-secondary-fixed transition-colors shadow-sm flex items-center gap-2">
+                Enquire Now
+            </button>
+</div>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="py-section-gap px-margin-desktop bg-surface-container-lowest border-b border-surface-variant">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-6 space-y-8">
+<h1 class="font-display-lg text-display-lg md:font-display-lg text-display-lg text-primary">Navigating Your Real Estate Journey with Precision.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Comprehensive assistance for buying, selling, and renting premium residential and commercial properties. We transform complex transactions into seamless experiences.</p>
+<div class="flex gap-4">
+<button class="bg-secondary text-on-secondary font-label-bold text-label-bold px-8 py-4 rounded-DEFAULT hover:bg-on-secondary-fixed transition-colors shadow-sm">
+                            Find My Property
+                        </button>
+<button class="bg-transparent border-2 border-primary text-primary font-label-bold text-label-bold px-8 py-4 rounded-DEFAULT hover:bg-surface-variant transition-colors">
+                            Explore Categories
+                        </button>
+</div>
+</div>
+<div class="md:col-span-6 relative h-[500px] rounded-lg overflow-hidden shadow-[0px_10px_15px_-3px_rgba(15,23,42,0.08)]">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A modern, high-end architectural visualization of a luxurious commercial and residential complex. The scene is brightly lit with natural sunlight, showcasing sleek glass facades, manicured minimalist landscaping, and a pristine white and deep navy color palette. The mood is aspirational and highly professional, reflecting a premium real estate environment in a bright, modern light-mode setting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDGjLtblB93Vzju5S2X8mvA9zWIs1QQXQeuunP8GqObQRuAR5yPKXgwlbJmY0svQRGREmJMk7qeuYfIzJmA5BPmGo0Krdqn3DPsmXpTXLtWt2hzlVMnJds-_TrfYptCR2jDYd1k8K-hdG-xUt7cqIFL0Ogj8qbdCKiVqA0CPcqp14rzgcZZuyFVM5WuZZ2drCRLGLab3SejBqanNUTdI3kFEY2PzWuhTR-mgftO6mKLLTKARkArQwERhQ')"></div>
+</div>
+</div>
+</section>
+<!-- Search Teaser -->
+<section class="py-12 bg-primary-fixed px-margin-desktop">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row items-center justify-between gap-6 bg-surface-container-lowest p-8 rounded-xl shadow-[0px_10px_15px_-3px_rgba(15,23,42,0.08)] border border-outline-variant">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary text-4xl filled" data-icon="location_on">location_on</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Location-based search tailored to your budget.</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Discover the perfect space in your ideal neighborhood.</p>
+</div>
+</div>
+<button class="whitespace-nowrap bg-secondary text-on-secondary font-label-bold text-label-bold px-6 py-3 rounded-DEFAULT hover:bg-on-secondary-fixed transition-colors shadow-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-xl" data-icon="search">search</span>
+                    Start Search
+                </button>
+</div>
+</section>
+<!-- Services Grid (Bento) -->
+<section class="py-section-gap px-margin-desktop bg-background">
+<div class="max-w-container-max mx-auto space-y-12">
+<div class="text-center max-w-2xl mx-auto space-y-4">
+<h2 class="font-headline-md text-headline-md text-primary">Expert Assistance at Every Step</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Whether you are acquiring a new headquarters or seeking a temporary residential lease, our specialized teams provide dedicated support.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Buying Assistance (Spans 8 cols) -->
+<div class="md:col-span-8 bg-surface-container-lowest rounded-xl border border-outline-variant p-8 shadow-[0px_10px_15px_-3px_rgba(15,23,42,0.08)] hover:shadow-lg transition-shadow relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary-fixed opacity-50 rounded-full blur-3xl -mr-20 -mt-20"></div>
+<div class="relative z-10 space-y-6">
+<div class="w-16 h-16 bg-surface-container-low rounded-lg flex items-center justify-center border border-outline-variant">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="real_estate_agent">real_estate_agent</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Property Buying Assistance</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">A detailed, consultative approach to finding and securing your ideal home or commercial space. From initial market analysis and curated viewings to rigorous negotiation and final contract execution, we protect your interests throughout the acquisition process.</p>
+</div>
+<ul class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-lg" data-icon="check_circle">check_circle</span> Market Valuation &amp; Analysis</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-lg" data-icon="check_circle">check_circle</span> Exclusive Off-Market Listings</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-lg" data-icon="check_circle">check_circle</span> Legal &amp; Compliance Review</li>
+</ul>
+</div>
+</div>
+<!-- Renting Assistance (Spans 4 cols) -->
+<div class="md:col-span-4 bg-surface-container-lowest rounded-xl border border-outline-variant p-8 shadow-[0px_10px_15px_-3px_rgba(15,23,42,0.08)] hover:shadow-lg transition-shadow flex flex-col justify-between">
+<div class="space-y-6">
+<div class="w-16 h-16 bg-surface-container-low rounded-lg flex items-center justify-center border border-outline-variant">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="key">key</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Property Renting Assistance</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Streamlined solutions for tenants seeking premium flats or commercial shops. We handle lease negotiations and vetting to ensure a secure agreement.</p>
+</div>
+</div>
+<button class="mt-8 text-secondary font-label-bold text-label-bold flex items-center gap-2 hover:text-on-secondary-fixed transition-colors">
+                            View Rental Process <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Categories Section -->
+<section class="py-section-gap px-margin-desktop bg-surface-container-low border-t border-surface-variant">
+<div class="max-w-container-max mx-auto space-y-12">
+<h2 class="font-headline-md text-headline-md text-primary text-center">Explore Our Portfolio</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Flats -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-[0px_10px_15px_-3px_rgba(15,23,42,0.08)] group cursor-pointer">
+<div class="h-64 relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="A bright, airy interior of a luxury residential flat. Floor-to-ceiling windows offer a city view, casting natural light onto minimalist, high-end furniture. The color palette features neutral whites, soft greys, and subtle navy accents, creating a calm, authoritative, and clean light-mode aesthetic suitable for a premium real estate brochure." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAxyFUEl9JeznOfMUbziwb9EYR62MED5EazrcNRVyadYD18pbbpK-Buz4fChBMkYdvK-uwqBw9idX_kofc-VEJVFG6Lv0SPzGuWc_nitNj00yECH2wW0iMwaK22hnUyzXTIepqbyxsymHw5k4ctMsgtl8yzJ_9UNh5HSdM_z0pYQpgpBpAuf2TiKoxbqAw6043srKh0ykP9uLz7t4ImTTktmcgMsG7WOQAGzBcCZfuMi6OiM_cQro_v_Q')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<h3 class="absolute bottom-6 left-6 font-headline-sm text-headline-sm text-on-primary">Flats &amp; Residences</h3>
+</div>
+<div class="p-6 bg-surface-bright flex justify-between items-center">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Premium apartments and penthouses.</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform" data-icon="east">east</span>
+</div>
+</div>
+<!-- Commercial -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden shadow-[0px_10px_15px_-3px_rgba(15,23,42,0.08)] group cursor-pointer">
+<div class="h-64 relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="A modern, high-end commercial retail space or sleek corporate office lobby. The setting features sharp geometric lines, polished concrete floors, and glass partitions. Lighting is bright and professional, emphasizing a minimalist, corporate environment with deep navy elements and clean white surfaces, representing professional discipline." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB9Rc-EJURljp9vR6iIWhboATZfR6yLQaud6odfkyGgx3OMmiSzBKkliqbxAS_lB5eOxuKyN2TKmwhr6nEk8XMPUZG_8EJdPHsO9hogVNFElsfwlPMjonfSs4O_7XW4toA36EHFOhaeg0PDxrcBFxHNXn1mQs-F7bZ-EsuztH2z6LWwcstrR1Pvk8G15-YmW6GDNzj---XCLVu7GzH_8V3_YoWZTubSieQKyhZvt7RAQT7YswePBhG2OA')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<h3 class="absolute bottom-6 left-6 font-headline-sm text-headline-sm text-on-primary">Shops &amp; Commercial</h3>
+</div>
+<div class="p-6 bg-surface-bright flex justify-between items-center">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Prime retail spaces and corporate offices.</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform" data-icon="east">east</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (from JSON) -->
+<footer class="bg-primary dark:bg-surface-container-highest border-t border-on-primary-fixed-variant full-width flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-desktop py-section-gap max-w-container-max mx-auto">
+<div class="col-span-12 md:col-span-4 space-y-4">
+<div class="font-headline-sm text-headline-sm text-on-primary dark:text-on-surface">EliteConsult</div>
+<p class="font-body-sm text-body-sm text-surface-variant">Authoritative real estate brokerage and automotive leasing.</p>
+</div>
+<div class="col-span-12 md:col-span-8 flex flex-wrap gap-8 md:justify-end items-center">
+<a class="font-body-sm text-body-sm text-surface-variant hover:text-on-primary hover:text-secondary-fixed transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-surface-variant hover:text-on-primary hover:text-secondary-fixed transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-body-sm text-body-sm text-surface-variant hover:text-on-primary hover:text-secondary-fixed transition-colors opacity-80 hover:opacity-100 flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]" data-icon="verified">verified</span> GST Verification
+                </a>
+<a class="font-body-sm text-body-sm text-surface-variant hover:text-on-primary hover:text-secondary-fixed transition-colors opacity-80 hover:opacity-100 flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]" data-icon="shield">shield</span> Govt Approved Status
+                </a>
+</div>
+<div class="col-span-12 mt-12 pt-8 border-t border-on-primary-fixed-variant text-center">
+<p class="font-body-sm text-body-sm text-surface-variant opacity-80">© 2024 EliteConsult Real Estate &amp; Car Leasing. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</body></html>
