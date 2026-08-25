@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import MainLayout from './layouts/MainLayout'
 import ErrorBoundary from './components/ui/ErrorBoundary'
 import { PageTransition } from './components/animations'
@@ -33,7 +33,7 @@ function NotFound() {
           The page you are looking for does not exist or has been moved.
         </p>
         <a
-          href="/"
+          href="#/"
           className="inline-block bg-primary text-on-primary font-label-bold text-label-bold px-6 py-3 rounded-lg hover:opacity-80 transition-opacity"
         >
           Return Home
@@ -45,27 +45,25 @@ function NotFound() {
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <ErrorBoundary>
-        <Suspense fallback={<PageLoading />}>
-          <PageTransition>
-            <Routes>
-              <Route element={<MainLayout />}>
-                <Route index             element={<Home />}             />
-                <Route path="/about"     element={<About />}            />
-                <Route path="/real-estate" element={<RealEstateServices />} />
-                <Route path="/properties"  element={<Properties />}     />
-                <Route path="/car-leasing" element={<CarLeasing />}     />
-                <Route path="/vehicles"    element={<Vehicles />}       />
-                <Route path="/services"    element={<Services />}       />
-                <Route path="/community"   element={<Community />}      />
-                <Route path="/contact"     element={<Contact />}        />
-                <Route path="*"            element={<NotFound />}       />
-              </Route>
-            </Routes>
-          </PageTransition>
-        </Suspense>
-      </ErrorBoundary>
-    </BrowserRouter>
+    <ErrorBoundary>
+      <Suspense fallback={<PageLoading />}>
+        <PageTransition>
+          <Routes>
+            <Route element={<MainLayout />}>
+              <Route index             element={<Home />}             />
+              <Route path="/about"     element={<About />}            />
+              <Route path="/real-estate" element={<RealEstateServices />} />
+              <Route path="/properties"  element={<Properties />}     />
+              <Route path="/car-leasing" element={<CarLeasing />}     />
+              <Route path="/vehicles"    element={<Vehicles />}       />
+              <Route path="/services"    element={<Services />}       />
+              <Route path="/community"   element={<Community />}      />
+              <Route path="/contact"     element={<Contact />}        />
+              <Route path="*"            element={<NotFound />}       />
+            </Route>
+          </Routes>
+        </PageTransition>
+      </Suspense>
+    </ErrorBoundary>
   )
 }
